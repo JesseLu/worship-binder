@@ -1,0 +1,4 @@
+#! /bin/sh
+cat `ls songs/*` > .all_songs
+pdflatex --halt-on-error chord_book.tex
+pdflatex --halt-on-error word_book.tex
